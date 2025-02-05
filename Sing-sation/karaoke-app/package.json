@@ -5,8 +5,12 @@
   "packages": {},
   "scripts": {
     "start": "react-scripts start"
+    "homepage": "https://shuaib007.github.io/karaoke-app"
+
   }
 }
 git add package-lock.json
 git commit -m "Add package-lock.json"
 git push origin main
+
+

@@ -1,0 +1,51 @@
+/* Importing Tailwind's base, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Example customizations */
+
+/* Customizing the theme colors */
+@layer theme {
+  .bg-primary {
+    background-color: #FF6347; /* Tomato */
+  }
+
+  .text-primary {
+    color: #FF6347; /* Tomato */
+  }
+
+  .hover\:bg-primary:hover {
+    background-color: #FF6347; /* Tomato */
+  }
+}
+
+/* Extending Tailwind for custom spacing, typography, or fonts */
+@layer utilities {
+  .content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Custom font-family */
+@layer base {
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+}
+
+/* Example of adding a custom class for a specific button style */
+.button {
+  @apply bg-blue-500 text-white py-2 px-4 rounded-lg shadow-md transition-all duration-300 ease-in-out;
+}
+
+.button:hover {
+  @apply bg-blue-600;
+}
+
+/* Custom container styling */
+.container {
+  @apply mx-auto px-4 py-6 max-w-screen-lg;
+}
